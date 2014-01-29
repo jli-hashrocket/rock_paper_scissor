@@ -1,11 +1,1 @@
-<%= form_tag(throw_signs_path, method: "post") do %>
-
-<div class="field">
-  <%= label_tag :name, "Pick a sign" %><br/>
-  <%= select_tag :name, options_from_collection_for_select(@signs, :name, :name) %>
-</div>
-
-<div class="actions">
-  <%= submit_tag "Submit" %>
-</div>
-<% end %>
+<%= render 'form' %>

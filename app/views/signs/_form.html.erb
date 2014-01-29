@@ -1,0 +1,17 @@
+<%= form_tag(throw_signs_path, method: "post") do %>
+<div class="row">
+  <div class="large-6 columns"
+    <div class="field">
+      <%= label_tag :name, "Pick a sign" %><br/>
+      <%= select_tag :name, options_from_collection_for_select(@signs, :name, :name) %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns"
+      <div class="actions">
+      <%= submit_tag "Submit" %>
+    </div>
+    <% end %>
+  </div>
+</div>
