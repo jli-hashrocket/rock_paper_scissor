@@ -19,6 +19,7 @@ So I can see if I won or lost the game
     select "rock", from: "Pick a sign"
     click_on "Submit"
 
+    expect(page).to have_content(rock.name)
     expect(page).to have_content("New Game")
   end
 
